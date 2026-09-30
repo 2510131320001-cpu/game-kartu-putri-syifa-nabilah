@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 <body>
     <div id = "halaman-awal" class = "halaman">
         <header>
-            <h1>>Kartu Memori</h1>
+            <h1>Kartu Memori</h1>
             <p class = "subjudul">Cari pasangan gambar yang sama!</p>
         </header>
         <main>
@@ -18,6 +18,23 @@
                 <p>Selamat bermain, HAVE FUN!!</p>
             </div>
             <button id="btn-mulai" class="btn-utama">Mulai Main</button>
+        </main>
+    </div>
+
+    <div id="halaman-game" class="halaman" style="display: none;">
+        <header>
+            <button id="btn-kembali" class="btn-teks">← Kembali</button>
+            <h2>Cari Pasangan!</h2>
+        </header>
+        <main>
+            <div class = "info-game">
+                <p>Percobaan: <span id="skor">0</span></p>
+                <p>Pasangan: <span id="pasangan">0</span> / ?</p>
+            </div>
+
+            <div id="papan" class="papan"></div>
+
+            <button id="btn-reset" class="btn-utama">Ulangi</button>
         </main>
     </div>
     

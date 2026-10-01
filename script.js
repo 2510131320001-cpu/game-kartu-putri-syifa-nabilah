@@ -8,3 +8,10 @@ let daftarGambar = [
     { id: 7, nama: "Semangka", file: "semangka.jpg" },
     { id: 8, nama: "Ceri",     file: "cherry.jpg" }
 ];
+
+let papan = [];
+let kartuPertama = null;
+let kartuKedua = null;
+let kunciPapan = false;
+let percobaan = 0;
+let pasanganDitemukan = 0;

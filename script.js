@@ -15,3 +15,17 @@ let kartuKedua = null;
 let kunciPapan = false;
 let percobaan = 0;
 let pasanganDitemukan = 0;
+
+const halamanHome = document.getElementById("halaman-awal");
+const halamanGame = document.getElementById("halaman-game");
+const halamanMenang = document.getElementById("halaman-menang");
+
+const bentukpapan = document.getElementById("papan");
+const hitungskor = document.getElementById("skor");
+const temukanpasangan = document.getElementById("pasangan");
+const skorAkhir = document.getElementById("skor-akhir");
+
+const btnMulai = document.getElementById("btn-mulai");
+const btnKembali = document.getElementById("btn-kembali");
+const btnReset = document.getElementById("btn-reset");
+const btnMainLagi = document.getElementById("btn-main-lagi");

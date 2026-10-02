@@ -128,3 +128,8 @@ header h2 {
 .kartu.terbuka img {
     opacity: 1;
 }
+
+.kartu.cocok {
+    background-color: #D1FAE5;
+    cursor: default;
+}

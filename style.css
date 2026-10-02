@@ -24,3 +24,20 @@ body {
     text-align: center;
     position: relative;
 }
+
+header h1 {
+    font-size: 28px;
+    color: #4C1D95;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 22px;
+    color: #4C1D95;
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    color: #7C3AED;
+    margin-bottom: 24px;
+}

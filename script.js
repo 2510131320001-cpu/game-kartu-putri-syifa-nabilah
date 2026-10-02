@@ -37,3 +37,18 @@ function tampilkanHalaman(tampilanhalaman) {
     document.getElementById(tampilanhalaman).style.display = "block";
 }
 
+function siapkanPapan() {
+    papan = [];
+
+    daftarGambar.forEach(function(gambar) {
+        papan.push({ id: gambar.id, nama: gambar.nama, file: gambar.file });
+        papan.push({ id: gambar.id, nama: gambar.nama, file: gambar.file });
+    });
+
+    for (let i = papan.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        let temp = papan[i];
+        papan[i] = papan[j];
+        papan[j] = temp;
+    }
+}

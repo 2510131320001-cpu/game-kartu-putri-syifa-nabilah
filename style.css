@@ -13,3 +13,14 @@ body {
     align-items: center;
     padding: 20px;
 }
+
+.halaman {
+    background-color: white;
+    border-radius: 24px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}

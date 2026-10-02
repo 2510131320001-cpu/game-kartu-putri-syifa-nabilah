@@ -133,3 +133,9 @@ header h2 {
     background-color: #D1FAE5;
     cursor: default;
 }
+
+.skor-akhir {
+    font-size: 20px;
+    color: #4C1D95;
+    margin-bottom: 20px 0;
+}

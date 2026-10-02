@@ -112,3 +112,11 @@ header h2 {
     user-select: none;
     position: relative;
 }
+
+.kartu img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.3s;
+}

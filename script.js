@@ -124,3 +124,18 @@ function resetPilihan() {
     kartuPertama = null;
     kartuKedua = null;
 }
+
+fungtion mulaiPermainan() {
+    percobaan = 0;
+    pasanganDitemukan = 0;
+    kartuPertama = null;
+    kartuKedua = null;
+    kunciPapan = false;
+
+    hitungskor.textContent = 0;
+    temukanpasangan.textContent = 0;
+
+    siapkanPapan();
+    tampilkanPapan();
+    tampilkanHalaman("halaman-game");
+}   

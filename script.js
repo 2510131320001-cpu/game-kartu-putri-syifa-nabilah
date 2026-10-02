@@ -125,7 +125,7 @@ function resetPilihan() {
     kartuKedua = null;
 }
 
-fungtion mulaiPermainan() {
+function mulaiPermainan() {
     percobaan = 0;
     pasanganDitemukan = 0;
     kartuPertama = null;
@@ -138,4 +138,11 @@ fungtion mulaiPermainan() {
     siapkanPapan();
     tampilkanPapan();
     tampilkanHalaman("halaman-game");
-}   
+}
+
+btnMulai.addEventListener("click", mulaiPermainan);
+btnReset.addEventListener("click", mulaiPermainan);
+btnMainLagi.addEventListener("click", mulaiPermainan);
+btnKembali.addEventListener("click", function() {
+    tampilkanHalaman("halaman-awal");
+});

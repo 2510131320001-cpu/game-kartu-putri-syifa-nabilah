@@ -52,3 +52,23 @@ function siapkanPapan() {
         papan[j] = temp;
     }
 }
+
+function tampilkanPapan() {
+    bentukpapan.innerHTML = "";
+
+    papan.forEach(function(kartu, objek) {
+        const div = document.createElement("div");
+        div.className = "kartu";
+        div.dataset.objek = objek;
+    
+        const img = document.createElement("img");
+        img.src = kartu.file;
+        img.alt = kartu.nama;
+        div.appendChild(img);
+
+        div.addEventListener("click", function() {
+            TekanKartu(div, objek);
+        });
+        bentukpapan.appendChild(div);
+    });
+}

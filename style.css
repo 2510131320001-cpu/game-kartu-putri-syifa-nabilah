@@ -45,6 +45,7 @@ header h2 {
 .btn-utama {
     background-color: #7C3AED;
     color: white;
+    border: none;
     padding: 14px 40px;
     border-radius: 50px;
     font-size: 16px;
@@ -78,4 +79,22 @@ header h2 {
     line-height: 1.8;
     margin-bottom: 10px;
     text-align: left;
+}
+
+.info-game {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F3E8FF;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #4C1D95;
+}
+
+.papan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 10px;
 }

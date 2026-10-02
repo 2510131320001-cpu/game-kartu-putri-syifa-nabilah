@@ -29,3 +29,11 @@ const btnMulai = document.getElementById("btn-mulai");
 const btnKembali = document.getElementById("btn-kembali");
 const btnReset = document.getElementById("btn-reset");
 const btnMainLagi = document.getElementById("btn-main-lagi");
+
+function tampilkanHalaman(tampilanhalaman) {
+    halamanHome.style.display = "none";
+    halamanGame.style.display = "none";
+    halamanMenang.style.display = "none";
+    document.getElementById(tampilanhalaman).style.display = "block";
+}
+

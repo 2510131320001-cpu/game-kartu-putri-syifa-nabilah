@@ -41,3 +41,41 @@ header h2 {
     color: #7C3AED;
     margin-bottom: 24px;
 }
+
+.btn-utama {
+    background-color: #7C3AED;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.btn-utama:hover {
+    background-color: #6D28D9;
+    transform: scale(1.05);
+}
+
+.btn-teks {
+    background: none;
+    border: none;
+    color: #7C3AED;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.info-box {
+    background-color: #F3E8FF;
+    padding: 20px;
+    border-radius: 16px;
+    color: #4C1D95;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: left;
+}

@@ -72,3 +72,50 @@ function tampilkanPapan() {
         bentukpapan.appendChild(div);
     });
 }
+
+function TekanKartu(elemen, objek) {
+    if (kunciPapan === true) return;
+    if (elemen.classList.contains("terbuka")) return;
+    if (elemen.classList.contains("cocok")) return;
+
+    elemen.classList.add("terbuka");
+
+    if (kartuPertama === null) {
+        kartuPertama = { elemen: elemen, objek: objek };
+        return;
+    }
+
+    kartuKedua = { elemen: elemen, objek: objek };
+    percobaan++;
+    hitungskor.textContent = percobaan;
+
+    cekPasangan();
+}
+
+function cekPasangan() {
+    let pasangan1 = kartuPertama.objek;
+    let pasangan2 = kartuKedua.objek;
+
+    if (papan[pasangan1].id === papan[pasangan2].id) {
+        kartuPertama.elemen.classList.add("cocok");
+        kartuKedua.elemen.classList.add("cocok");
+        pasanganDitemukan++;
+        temukanpasangan.textContent = pasanganDitemukan;
+        resetPilihan();
+
+        if (pasanganDitemukan === 8) {
+            setTimeout(function() {
+                skorAkhir.textContent = percobaan;
+                tampilkanHalaman("halaman-menang");
+            },800);
+        }
+    } else {
+        kunciPapan = true;
+        setTimeout(function() {
+            kartuPertama.elemen.classList.remove("terbuka");
+            kartuKedua.elemen.classList.remove("terbuka");
+            resetPilihan();
+            kunciPapan = false;
+        }, 1000);
+    }
+}

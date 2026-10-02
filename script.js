@@ -119,3 +119,8 @@ function cekPasangan() {
         }, 1000);
     }
 }
+
+function resetPilihan() {
+    kartuPertama = null;
+    kartuKedua = null;
+}

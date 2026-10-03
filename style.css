@@ -141,6 +141,10 @@ header h2 {
 }
 
 @media (max-width: 450px) {
+    body {
+        padding: 30px 15px;
+        align-items: flex-start;
+    }
     .halaman {
         padding: 30px 20px;
     }
@@ -150,6 +154,7 @@ header h2 {
     }
 
     header h2 {
+        font-size: 20px;
         margin-top: 35px;
     }
 }
